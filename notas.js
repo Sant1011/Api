@@ -1,6 +1,7 @@
 const http = require('http');
 const d = [4.5, 3.5, 2.5, 4.0];
-// Señal 3 (funciones que hacen demasiado) corregida por Joshua Werminsky:
+// Señal 3 (funciones que hacen demasiado) corregida por Joshua Werminsky
+// se separó el handler en enrutar, calcularPromedio y responderJSON.
 const http = require('http');
 const s = http.createServer((req, res) => {
 if (req.url === '/salud') {
